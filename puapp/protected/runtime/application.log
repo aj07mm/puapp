@@ -1,0 +1,532 @@
+2014/06/13 14:30:27 [error] [system.db.CDbCommand] Error in preparing SQL: DROP TABLE 'user'
+2014/06/13 14:30:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'.
+2014/06/13 14:30:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(275): CDbCommand->dropTable('user')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_122228_user.php(17): CDbMigration->dropTable('user')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(440): m140613_122228_user->down()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m140613_122228_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:31:36 [error] [system.db.CDbCommand] Error in preparing SQL: DROP TABLE 'user'
+2014/06/13 14:31:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'.
+2014/06/13 14:31:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(275): CDbCommand->dropTable('user')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_122228_user.php(17): CDbMigration->dropTable('user')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(440): m140613_122228_user->down()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m140613_122228_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:32:50 [error] [system.db.CDbCommand] Error in preparing SQL: DROP TABLE 'user'
+2014/06/13 14:32:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'.
+2014/06/13 14:32:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: user. The SQL statement executed was: DROP TABLE 'user'' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(275): CDbCommand->dropTable('user')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_122228_user.php(17): CDbMigration->dropTable('user')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(440): m140613_122228_user->down()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m140613_122228_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:38:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'testdrive'' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CModule.php(393): CDbConnection->init()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(128): MigrateCommand->getMigrationHistory(1)
+#6 [internal function]: MigrateCommand->actionDown(Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#11 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#12 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#13 {main}
+---
+2014/06/13 14:38:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'â´puapp'' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CModule.php(393): CDbConnection->init()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(128): MigrateCommand->getMigrationHistory(1)
+#6 [internal function]: MigrateCommand->actionDown(Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#11 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#12 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#13 {main}
+---
+2014/06/13 14:38:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'puapp.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/06/13 14:50:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint foreign key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) constraint foreign key('user_id') references user('id').
+2014/06/13 14:50:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint foreign key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) constraint foreign key('user_id') references user('id')' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('pua', Array, 'constraint fore...')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_124507_pua.php(12): CDbMigration->createTable('pua', Array, 'constraint fore...')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_124507_pua->up()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_124507_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:50:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint foreign_key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) constraint foreign_key('user_id') references user('id').
+2014/06/13 14:50:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint foreign_key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) constraint foreign_key('user_id') references user('id')' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('pua', Array, 'constraint fore...')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_124507_pua.php(12): CDbMigration->createTable('pua', Array, 'constraint fore...')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_124507_pua->up()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_124507_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:51:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'alter table pua add constraint foreign key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) alter table pua add constraint foreign key('user_id') references user('id').
+2014/06/13 14:51:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'alter table pua add constraint foreign key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) alter table pua add constraint foreign key('user_id') references user('id')' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('pua', Array, 'alter table pua...')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_124507_pua.php(12): CDbMigration->createTable('pua', Array, 'alter table pua...')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_124507_pua->up()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_124507_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:51:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'alter table pua add constraint foreign_key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) alter table pua add constraint foreign_key('user_id') references user('id').
+2014/06/13 14:51:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'alter table pua add constraint foreign_key('user_id') references user('id')' at line 6. The SQL statement executed was: CREATE TABLE `pua` (
+	`user_id` int(11),
+	`alias` varchar(255) NOT NULL,
+	`pontuation` text,
+	`photo` text
+) alter table pua add constraint foreign_key('user_id') references user('id')' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('pua', Array, 'alter table pua...')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_124507_pua.php(12): CDbMigration->createTable('pua', Array, 'alter table pua...')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_124507_pua->up()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_124507_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 14:52:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('user_id') references user('id')' at line 1. The SQL statement executed was: alter table pua add constraint foreign_key('user_id') references user('id').
+2014/06/13 14:52:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('user_id') references user('id')' at line 1. The SQL statement executed was: alter table pua add constraint foreign_key('user_id') references user('id')' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(164): CDbCommand->execute(Array)
+#1 C:\wamp\www\puapp\puapp\protected\migrations\m140613_124507_pua.php(14): CDbMigration->execute('alter table pua...')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_124507_pua->up()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_124507_...')
+#4 [internal function]: MigrateCommand->actionUp(Array)
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#10 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#11 {main}
+---
+2014/06/13 15:03:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: DROP TABLE `user`.
+2014/06/13 15:03:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: DROP TABLE `user`' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(275): CDbCommand->dropTable('user')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_122228_user.php(17): CDbMigration->dropTable('user')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(440): m140613_122228_user->down()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m140613_122228_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 19:44:50 [error] [php] Use of undefined constant console - assumed 'console' (C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php:69)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): PuaController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): PuaController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): PuaController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): PuaController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=pua/create
+in C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php (69)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 19:44:53 [error] [php] Use of undefined constant console - assumed 'console' (C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php:69)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): PuaController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): PuaController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): PuaController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): PuaController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=pua/create
+in C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php (69)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 19:49:01 [error] [php] Undefined index: Pua (C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php:70)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): PuaController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): PuaController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): PuaController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): PuaController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=pua/create
+in C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php (70)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 19:54:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`puapp`.`pua`, CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `pua` (`alias`, `photo`, `user_id`) VALUES (:yp0, :yp1, :yp2).
+in C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php (77)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 19:54:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`puapp`.`pua`, CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `pua` (`alias`, `photo`, `user_id`) VALUES (:yp0, :yp1, :yp2)' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\puapp\puapp\protected\controllers\PuaController.php(77): CActiveRecord->save()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): PuaController->actionCreate()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pua/create')
+#14 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=pua/create
+HTTP_REFERER=http://localhost/puapp/puapp/index.php?r=pua/create
+---
+2014/06/13 23:09:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'puapp.history'. The SQL statement executed was: DROP TABLE `history`.
+2014/06/13 23:09:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'puapp.history'. The SQL statement executed was: DROP TABLE `history`' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(275): CDbCommand->dropTable('history')
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_210507_history.php(20): CDbMigration->dropTable('history')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(440): m140613_210507_history->down()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m140613_210507_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 23:20:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gethistory".' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('gethistory')
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('gethistory')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/gethist...')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/gethistory
+---
+2014/06/13 23:22:54 [error] [php] Undefined variable: model (C:\wamp\www\puapp\puapp\protected\controllers\SiteController.php:35)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php
+in C:\wamp\www\puapp\puapp\protected\controllers\SiteController.php (35)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 23:23:01 [error] [php] Undefined variable: model (C:\wamp\www\puapp\puapp\protected\controllers\SiteController.php:35)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php
+in C:\wamp\www\puapp\puapp\protected\controllers\SiteController.php (35)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 23:42:22 [error] [exception.CException] exception 'CException' with message 'Property "History.user" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('user')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+HTTP_REFERER=http://localhost/puapp/puapp/index.php
+---
+2014/06/13 23:42:23 [error] [exception.CException] exception 'CException' with message 'Property "History.user" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('user')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+HTTP_REFERER=http://localhost/puapp/puapp/index.php
+---
+2014/06/13 23:44:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`puapp`.`#sql-1e5c_70`, CONSTRAINT `pua_id` FOREIGN KEY (`user_id`) REFERENCES `pua` (`id`)). The SQL statement executed was: alter table pua add constraint pua_id foreign key(user_id) references pua(id);.
+2014/06/13 23:44:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`puapp`.`#sql-1e5c_70`, CONSTRAINT `pua_id` FOREIGN KEY (`user_id`) REFERENCES `pua` (`id`)). The SQL statement executed was: alter table pua add constraint pua_id foreign key(user_id) references pua(id);' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(164): CDbCommand->execute(Array)
+#1 C:\wamp\www\puapp\puapp\protected\migrations\m140613_210507_history.php(16): CDbMigration->execute('alter table pua...')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_210507_history->up()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_210507_...')
+#4 [internal function]: MigrateCommand->actionUp(Array)
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#10 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#11 {main}
+---
+2014/06/13 23:44:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'history' already exists. The SQL statement executed was: CREATE TABLE `history` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`pua_id` int(11),
+	`date` datetime,
+	`status` varchar(255) NOT NULL,
+	`comentario` text
+).
+2014/06/13 23:44:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'history' already exists. The SQL statement executed was: CREATE TABLE `history` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`pua_id` int(11),
+	`date` datetime,
+	`status` varchar(255) NOT NULL,
+	`comentario` text
+)' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('history', Array, NULL)
+#2 C:\wamp\www\puapp\puapp\protected\migrations\m140613_210507_history.php(14): CDbMigration->createTable('history', Array)
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(415): m140613_210507_history->up()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140613_210507_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\puapp\puapp\protected\yiic.php(7): require_once('C:\\wamp\\www\\pua...')
+#12 {main}
+---
+2014/06/13 23:45:38 [error] [php] Undefined offset: 0 (C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php:9)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): HistoryController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): HistoryController->runActionWithFilters()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): HistoryController->run()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+in C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php (9)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/13 23:46:16 [error] [exception.CException] exception 'CException' with message 'Property "History.user" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('user')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+HTTP_REFERER=http://localhost/puapp/puapp/index.php
+---
+2014/06/13 23:46:55 [error] [exception.CException] exception 'CException' with message 'Property "History.user" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('user')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+HTTP_REFERER=http://localhost/puapp/puapp/index.php
+---
+2014/06/13 23:47:13 [error] [exception.CException] exception 'CException' with message 'Property "History.user" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('user')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+---
+2014/06/13 23:48:19 [error] [exception.CException] exception 'CException' with message 'Property "History.pua" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('pua')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('pua')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+---
+2014/06/13 23:49:02 [error] [exception.CException] exception 'CException' with message 'Property "History.pua" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('pua')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('pua')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+---
+2014/06/13 23:49:05 [error] [exception.CException] exception 'CException' with message 'Property "History.pua" is not defined.' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('pua')
+#1 C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php(9): CActiveRecord->__get('pua')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\actions\CInlineAction.php(49): HistoryController->actionAll()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('all')
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/all')
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+---
