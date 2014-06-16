@@ -62,7 +62,14 @@ class HistoryController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new History;
+		
+		$model = History::model()->findByAttributes(array(
+			'date'=>date('Y-m-d')));
+		
+		if(is_null($model)){
+			$model = new History;
+		}
+			
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -86,8 +93,9 @@ class HistoryController extends Controller
 			$model->pua_id = $pua->id;
 
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('site/index'));
 		}
+
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -163,7 +171,7 @@ class HistoryController extends Controller
 		$allPuas = Pua::model()->findAll();
 
 		$pua_history = array();
-
+		
 		foreach($allPuas as $pua){
 			$pua_history[$pua->alias] = $arr_days;	
 			foreach($historico as $dia){

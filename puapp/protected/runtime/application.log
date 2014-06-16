@@ -2627,3 +2627,73 @@ Stack trace:
 REQUEST_URI=/puapp/puapp/index.php?r=history/all&days_from_now=7
 in C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php (168)
 in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/16 14:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "score".' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('score')
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('score')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/score')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/score
+HTTP_REFERER=http://localhost/puapp/puapp/index.php?r=site/index
+---
+2014/06/16 14:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('history/site')
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\puapp\puapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/puapp/puapp/index.php?r=history/site
+HTTP_REFERER=http://localhost/puapp/puapp/index.php?r=history/create
+---
+2014/06/16 14:40:57 [error] [php] Undefined index: days_from_now (C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php:149)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): HistoryController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): HistoryController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): HistoryController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): HistoryController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+in C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php (149)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/16 14:42:20 [error] [php] Trying to get property of non-object (C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php:170)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): HistoryController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): HistoryController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): HistoryController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): HistoryController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=history/all&days_from_now=7
+in C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php (170)
+in C:\wamp\www\puapp\puapp\index.php (13)
+2014/06/16 15:31:20 [error] [php] Undefined index: days_from_now (C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php:157)
+Stack trace:
+#0 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(133): HistoryController->runAction()
+#1 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CInlineFilter.php(58): HistoryController->filterAccessControl()
+#4 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CController.php(265): HistoryController->runActionWithFilters()
+#7 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): HistoryController->run()
+#8 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\puapp\vendor\yiisoft\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\puapp\puapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/puapp/puapp/index.php?r=history/all
+in C:\wamp\www\puapp\puapp\protected\controllers\HistoryController.php (157)
+in C:\wamp\www\puapp\puapp\index.php (13)

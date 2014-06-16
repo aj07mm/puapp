@@ -16,28 +16,29 @@ $(function () {
         function teste(data){
             data = JSON.parse(data);
 
-            data.map(function(x){
-                console.log(x)
-            });
+            console.log(data)
 
-            console.log(data);
-/*            for(var i = 0; i<= data.length;i++){
-                for(var j = 0; i<= data[i].length;j++){
+            arrData = [];
+            arrDataObj = [];
 
-
+            for(var v in data){
+                
+                for(var n in data[v]){
+                    arrDataObj.push(parseInt(data[v][n]));
                 }
+                console.log(arrDataObj)
+                arrData.push({
+                    name: v,
+                    data: arrDataObj
+                });
+
+                arrDataObj = [];
             }
 
-            var result = data.map(function (x) { 
-                return parseInt(x, 10); 
-            });*/
+            arrData.shift();
+            console.log(arrData);
+            arrDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]   
 
-            data.forEach(function(i,v){
-                console.log(v);
-            });
-
-            //for(var i=0;i<=)
-            arrDays = [1,2,3,4,5,6,7,8,9,10]   
 
             $('#container').highcharts({
                 title: {
@@ -70,7 +71,7 @@ $(function () {
                     verticalAlign: 'middle',
                     borderWidth: 0
                 },
-                series: data
+                series: arrData
             });
         }
 

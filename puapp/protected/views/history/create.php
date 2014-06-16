@@ -8,7 +8,8 @@ $this->breadcrumbs=array(
 );
 
 ?>
+<div style="text-align:center">
+	<h1 >SCORE</h1>
 
-<h1>Create History</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+	<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
