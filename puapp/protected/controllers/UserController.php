@@ -70,6 +70,9 @@ class UserController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
+			
+			// Gera um hash baseado em bcrypt
+			$model->password = $model->hash($_POST['User']['password']);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

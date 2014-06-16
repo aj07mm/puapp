@@ -4,6 +4,9 @@ $(function () {
             $.ajax({
                 type:'GET',
                 url:'http://localhost/puapp/puapp/index.php?r=history/all',
+                data: {
+                    'days_from_now': 7
+                },
                 success:function(data){
                     teste(data);
                 }
@@ -11,11 +14,15 @@ $(function () {
 
 
         function teste(data){
-            console.log(data)
+            data = JSON.parse(data);
+
+            var result = data.map(function (x) { 
+                return parseInt(x, 10); 
+            });
 
             novin = {
                     name: 'novin',
-                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    data: result
                 }
 
             //for(var i=0;i<=)
@@ -23,7 +30,7 @@ $(function () {
 
             $('#container').highcharts({
                 title: {
-                    text: 'Monthly Average Temperature',
+                    text: 'Monthly Average of Sets',
                     x: -20 //center
                 },
                 subtitle: {

@@ -19,6 +19,13 @@ class User extends CActiveRecord
 		return 'user';
 	}
 
+	public function hash(){
+		//$custo = '08';
+		$salt = 'Cf1f11ePArKlBJomM0F6aJ';
+			 
+		return crypt($_POST['User']['password'], '$2a$' . '$' . $salt . '$');
+	}
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

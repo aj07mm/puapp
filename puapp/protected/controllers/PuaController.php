@@ -62,7 +62,8 @@ class PuaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Pua;
+		$pua=new Pua;
+		$user = new User;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,19 +71,27 @@ class PuaController extends Controller
 
 		if(isset($_POST['Pua']))
 		{
-			var_dump($_POST['Pua']);
-			$model->attributes=$_POST['Pua'];
-			$model->photo = CUploadedFile::getInstance($model,'photo');
-			$model->user_id = 1;
-			if($model->save()){
-				$model->photo->saveAs('c:\wamp\www\puapp\puapp');
-				$this->redirect(array('view','id'=>$model->id));
+			
+			$user->login = $_POST['User']['login'];
+			$user->password = $user->hash($_POST['User']['password']);
+
+			$pua->attributes=$_POST['Pua'];
+			//$pua->photo = CUploadedFile::getInstance($pua,'photo');
+			
+			if($user->save()){
+				$pua->user_id = $user->id;	
+			}
+
+			if($pua->save()){
+				//$pua->photo->saveAs('c:\wamp\www\puapp\puapp');
+				$this->redirect(array('view','id'=>$pua->id));
 			}
 				
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$pua,
+			'model_user'=>$user
 		));
 	}
 

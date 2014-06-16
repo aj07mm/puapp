@@ -5,10 +5,9 @@
  *
  * The followings are the available columns in table 'history':
  * @property integer $id
- * @property integer $user_id
+ * @property integer $pua_id
  * @property string $date
- * @property string $status
- * @property string $comentario
+ * @property integer $num_de_sets
  */
 class History extends CActiveRecord
 {
@@ -28,13 +27,11 @@ class History extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('status', 'required'),
-			array('user_id', 'numerical', 'integerOnly'=>true),
-			array('status', 'length', 'max'=>255),
-			array('date, comentario', 'safe'),
+			array('pua_id, num_de_sets', 'numerical', 'integerOnly'=>true),
+			array('date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, date, status, comentario', 'safe', 'on'=>'search'),
+			array('id, pua_id, date, num_de_sets', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,10 +53,9 @@ class History extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'user_id' => 'User',
+			'pua_id' => 'Pua',
 			'date' => 'Date',
-			'status' => 'Status',
-			'comentario' => 'Comentario',
+			'num_de_sets' => 'Num De Sets',
 		);
 	}
 
@@ -82,10 +78,9 @@ class History extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('pua_id',$this->pua_id);
 		$criteria->compare('date',$this->date,true);
-		$criteria->compare('status',$this->status,true);
-		$criteria->compare('comentario',$this->comentario,true);
+		$criteria->compare('num_de_sets',$this->num_de_sets);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
