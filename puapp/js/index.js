@@ -16,14 +16,25 @@ $(function () {
         function teste(data){
             data = JSON.parse(data);
 
-            var result = data.map(function (x) { 
-                return parseInt(x, 10); 
+            data.map(function(x){
+                console.log(x)
             });
 
-            novin = {
-                    name: 'novin',
-                    data: result
+            console.log(data);
+/*            for(var i = 0; i<= data.length;i++){
+                for(var j = 0; i<= data[i].length;j++){
+
+
                 }
+            }
+
+            var result = data.map(function (x) { 
+                return parseInt(x, 10); 
+            });*/
+
+            data.forEach(function(i,v){
+                console.log(v);
+            });
 
             //for(var i=0;i<=)
             arrDays = [1,2,3,4,5,6,7,8,9,10]   
@@ -59,7 +70,7 @@ $(function () {
                     verticalAlign: 'middle',
                     borderWidth: 0
                 },
-                series: [novin]
+                series: data
             });
         }
 

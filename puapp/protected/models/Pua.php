@@ -4,6 +4,7 @@
  * This is the model class for table "pua".
  *
  * The followings are the available columns in table 'pua':
+ * @property integer $id
  * @property integer $user_id
  * @property string $alias
  * @property string $pontuation
@@ -12,7 +13,7 @@
  * The followings are the available model relations:
  * @property User $user
  */
-class Pua extends User
+class Pua extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -36,7 +37,7 @@ class Pua extends User
 			array('pontuation, photo', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('alias, photo', 'safe', 'on'=>'search'),
+			array('id, user_id, alias, pontuation, photo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,8 +59,9 @@ class Pua extends User
 	public function attributeLabels()
 	{
 		return array(
+			'id' => 'ID',
 			'user_id' => 'User',
-			'alias' => 'Nickname',
+			'alias' => 'Alias',
 			'pontuation' => 'Pontuation',
 			'photo' => 'Photo',
 		);
@@ -83,6 +85,7 @@ class Pua extends User
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id',$this->id);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('alias',$this->alias,true);
 		$criteria->compare('pontuation',$this->pontuation,true);

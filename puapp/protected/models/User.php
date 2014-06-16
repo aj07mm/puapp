@@ -8,6 +8,9 @@
  * @property string $login
  * @property string $password
  * @property string $last_login
+ *
+ * The followings are the available model relations:
+ * @property Pua[] $puas
  */
 class User extends CActiveRecord
 {
@@ -17,13 +20,6 @@ class User extends CActiveRecord
 	public function tableName()
 	{
 		return 'user';
-	}
-
-	public function hash(){
-		//$custo = '08';
-		$salt = 'Cf1f11ePArKlBJomM0F6aJ';
-			 
-		return crypt($_POST['User']['password'], '$2a$' . '$' . $salt . '$');
 	}
 
 	/**
@@ -51,6 +47,7 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'puas' => array(self::HAS_MANY, 'Pua', 'user_id'),
 		);
 	}
 
@@ -94,6 +91,14 @@ class User extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function hash(){
+		//$custo = '08';
+		$salt = 'Cf1f11ePArKlBJomM0F6aJ';
+			 
+		return crypt($_POST['User']['password'], '$2a$' . '$' . $salt . '$');
+	}
+
 
 	/**
 	 * Returns the static model of the specified AR class.

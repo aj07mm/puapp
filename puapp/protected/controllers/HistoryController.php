@@ -83,8 +83,6 @@ class HistoryController extends Controller
 				'user_id'=>Yii::app()->user->getId()
 			));
 
-			var_dump($pua);
-
 			$model->pua_id = $pua->id;
 
 			if($model->save())
@@ -161,12 +159,26 @@ class HistoryController extends Controller
 			$i ++;
 		}
 
-		$model = History::model()->findAll();
-		foreach($model as $dia){
-			$arr_days[$dia->date] = $dia->num_de_sets;
+		$historico = History::model()->findAll();
+		$allPuas = Pua::model()->findAll();
+
+		$pua_history = array();
+
+		foreach($allPuas as $pua){
+			$pua_history[$pua->alias] = $arr_days;	
+			foreach($historico as $dia){
+				if($dia->pua_id == $pua->id)
+					$pua_history[$pua->alias][$dia->date] = $dia->num_de_sets;			
+			}
+		}
+	
+		foreach($pua_history as $key => $pua){
+			$pua_history[$key] = array_values($pua_history[$key]);
 		}
 
-		echo json_encode(array_values($arr_days));
+		$pua_history[] = array_values($arr_days);
+		
+		echo json_encode($pua_history);
 
 	}
 
