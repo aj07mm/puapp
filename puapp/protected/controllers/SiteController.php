@@ -29,9 +29,27 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-//		$model = History::model()->findAll();
 
-		$this->render('index');
+		$model = History::model()->findAll();
+
+		$sql="select
+				pua.alias,
+				total
+			from(
+				select 
+					pua_id,
+					sum(num_de_sets) total
+				from history
+				group by pua_id
+			) a
+			join pua
+				on pua.id = a.pua_id
+			order by total desc";
+		$result= Yii::app()->db->createCommand($sql)->queryAll();
+		
+
+		$this->render('index',array(
+			'arr_rank'=>$result));
 	}
 
 	/**

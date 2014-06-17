@@ -62,10 +62,15 @@ class HistoryController extends Controller
 	 */
 	public function actionCreate()
 	{
-		
+
+		$pua = Pua::model()->findByAttributes(array(
+			'user_id'=>Yii::app()->user->getId()
+		));
+
 		$model = History::model()->findByAttributes(array(
-			'date'=>date('Y-m-d')));
-		
+			'date'=>date('Y-m-d'),
+			'pua_id'=>$pua->id));
+
 		if(is_null($model)){
 			$model = new History;
 		}
@@ -75,9 +80,6 @@ class HistoryController extends Controller
 		// $this->performAjaxValidation($model);
 
 
-		$pua = Pua::model()->findByAttributes(array(
-			'user_id'=>Yii::app()->user->getId()
-		));
 
 		if(isset($_POST['History']))
 		{

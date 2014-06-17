@@ -16,13 +16,10 @@ $(function () {
         function teste(data){
             data = JSON.parse(data);
 
-            console.log(data)
-
             arrData = [];
             arrDataObj = [];
 
-            for(var v in data){
-                
+            for(var v in data){                
                 for(var n in data[v]){
                     arrDataObj.push(parseInt(data[v][n]));
                 }
@@ -36,8 +33,7 @@ $(function () {
             }
 
             arrData.shift();
-            console.log(arrData);
-            arrDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]   
+            arrDays = [];
 
 
             $('#container').highcharts({
@@ -63,7 +59,7 @@ $(function () {
                     }]
                 },
                 tooltip: {
-                    valueSuffix: '°C'
+                    valueSuffix: ''
                 },
                 legend: {
                     layout: 'vertical',
