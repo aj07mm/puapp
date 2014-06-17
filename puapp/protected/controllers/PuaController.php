@@ -82,7 +82,7 @@ class PuaController extends Controller
 				$pua->user_id = $user->id;	
 				if($pua->save()){
 					//$pua->photo->saveAs('c:\wamp\www\puapp\puapp');
-					$this->redirect(array('view','id'=>$pua->id));
+					$this->redirect(array('site/index'));
 				}
 			}
 

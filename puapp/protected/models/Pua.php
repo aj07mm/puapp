@@ -34,6 +34,7 @@ class Pua extends CActiveRecord
 			array('alias', 'required'),
 			array('user_id', 'numerical', 'integerOnly'=>true),
 			array('alias', 'length', 'max'=>255),
+			array('alias','unique'),
 			array('pontuation, photo', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
